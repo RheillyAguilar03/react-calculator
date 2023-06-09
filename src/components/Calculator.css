@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    font-family: 'Righteous', cursive;
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: auto;
+    background: #1e1e1e;
+}
+
+.calculator {
+    background: #1e1e1e;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(250, 250, 250, 0.75);
+}
+
+input[type="text"] {
+    padding: 20px 10px;
+    text-align: right;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    width: 490px;
+    border-radius: 20px;
+    color: #f1f1f1;
+    margin: auto;
+    background: transparent;
+    letter-spacing: 3px;
+    cursor: default;
+}
+
+.button-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+}
+
+.button-items button {
+    padding: 30px;
+    margin: 5px;
+    border-radius: 30px;
+    font-size: bold;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.otherButton {
+    background: #f4f1de;
+}
+
+.formula {
+    background: #fb8500;
+    color: #f1f1f1;
+}
+
+.delete {
+    background: #495057;
+    color: #f1f1f1;
+}
+
+.clear {
+    grid-column: 1/3;
+    background: #495057;
+    color: #f1f1f1;
+}
+
+.equal {
+    grid-column: 3/5;
+    background: #fb8500;
+    color: #f1f1f1;
+}
+
+.button-items button:hover {
+    box-shadow: 0 0 15px rgba(250, 250, 250, 0.75);
+}
